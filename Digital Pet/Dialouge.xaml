@@ -1,0 +1,23 @@
+﻿<Window x:Class="Digital_Pet.Dialouge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource PrimaryHueMidBrush}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        xmlns:local="clr-namespace:Digital_Pet"
+        mc:Ignorable="d"
+        Title="Save Game" SizeToContent="WidthAndHeight">
+    <Grid Margin="4 4 4 4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="100"/>
+            <ColumnDefinition Width ="350"/>
+        </Grid.ColumnDefinitions>
+        <Label  FontSize="18" FontFamily="Dubai Medium" Style ="{DynamicResource MaterialDesignLabel}" Content="Save Name:" Grid.Row="0" Grid.Column ="0"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBox x:Name="FileName" HorizontalAlignment="Left" Margin="8" Width ="246"  Height="25" Grid.Row ="0" Grid.Column="1" Style="{DynamicResource MaterialDesignDataGridTextColumnEditingStyle}"></TextBox>
+        <Button Style="{DynamicResource MaterialDesignFlatAccentBgButton}" Content="Save" FontFamily="Dubai Medium" Grid.Column="1" Width =" 80" HorizontalAlignment="Right" Margin="4 4 4 0" Click="Save"/>
+    </Grid>
+</Window> 
+ 
+ 
