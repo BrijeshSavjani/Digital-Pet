@@ -1,0 +1,35 @@
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\Digital Pet.exe.config
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\Digital Pet.exe
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\Digital Pet.pdb
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet.csprojAssemblyReference.cache
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\MainWindow.g.cs
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\App.g.cs
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet_MarkupCompile.cache
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet_MarkupCompile.lref
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\MainWindow.baml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet.g.resources
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital_Pet.Properties.Resources.resources
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet.csproj.GenerateResource.cache
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet.csproj.CoreCompileInputs.cache
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet.exe
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet.pdb
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\MaterialDesignColors.dll
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\MaterialDesignColors.pdb
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\App.baml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Digital Pet.csproj.CopyComplete
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Game.g.cs
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Game.baml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\WpfAnimatedGif.dll
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\WpfAnimatedGif.pdb
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\bin\Debug\WpfAnimatedGif.xml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Dialouge.g.cs
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Dialouge.baml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Work.g.cs
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Work.baml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Market.g.cs
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Market.baml
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Game_Saves.g.cs
+C:\Users\brije\source\repos\Digital Pet\Digital Pet\obj\Debug\Game_Saves.baml
