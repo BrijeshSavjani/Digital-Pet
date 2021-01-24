@@ -14,9 +14,9 @@ For an upgraded version of the space invaders project please look at my other re
 
 <h3>Images:</h3>
 <div width = "100%" style = "display:inline;"> 
-  <img src = "screenshots\Start.png" width = "33%"/>
-  <img src = "screenshots\Main.png" width = "30%"/>
-  <img src = "screenshots\Mingame.png" width = "30%"/>
+  <img src = "screenshots\Start.png" width = "33%" style = "margin:3%;"/>
+  <img src = "screenshots\Main.png" width = "30%" style = "margin:3%;"/>
+  <img src = "screenshots\Mingame.png" width = "30%" style = "margin:3%;"/>
 </div>
 
 
