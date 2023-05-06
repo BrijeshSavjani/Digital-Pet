@@ -17,7 +17,7 @@ namespace Digital_Pet
         private int Money;
         //Constructor
         public Pet(int[] initial_values, List<int> initial_pantry)
-        {//Values can be fresh set or extracted from a fike
+        {//Values can be fresh set or extracted from a file
             Pantry = initial_pantry;
             Health = initial_values[0];
             Hunger = initial_values[1];
@@ -81,7 +81,7 @@ namespace Digital_Pet
         {// Buys food from market place
             //Checks if there's enough money first
             if(Cost <= Money) { Money = Money - Cost; Pantry.Add(Hunger_Removed); return true; }
-            return false;//returns flase if there's not enough
+            return false;//returns false if there's not enough
         }
     }
 }
