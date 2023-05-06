@@ -38,7 +38,7 @@ namespace Digital_Pet
             InitializeComponent();
             //Starting the timer responsible for moving the aliens
             alien_movement = new System.Timers.Timer(200);
-            //OnTimedEvent called when Timeer interval ticks
+            //OnTimedEvent called when Timer interval ticks
             alien_movement.Elapsed += OnTimedEvent;
             alien_movement.AutoReset = true;
             alien_movement.Enabled = true;
@@ -90,7 +90,7 @@ namespace Digital_Pet
                     {
                         ResetBullet();
                     }
-                    //Code to mobve code up the board (in reverse order i.e the top row is 0)
+                    //Code to move code up the board (in reverse order i.e the top row is 0)
                     this.Bullet.SetValue(Grid.RowProperty, z - 1);
                     //Resets margin for new row. Keeps Horrizontal Margin
                     Bullet.Margin = new Thickness(Plane_Margin.Left, 0, 0, 0);
@@ -105,19 +105,19 @@ namespace Digital_Pet
                     {
                         Point alien_point = alien.TransformToAncestor(WholeBoard).Transform(new Point(0, 0)); // Point of alien relative to the whole board
                         double alien_upper_x = alien_point.X + alien.RenderSize.Width; //Highest X value of the alien at that point in time
-                        double alien_upper_y = alien_point.Y + alien.RenderSize.Height;//Highest Y value of the alien at that poinmt in time
+                        double alien_upper_y = alien_point.Y + alien.RenderSize.Height;//Highest Y value of the alien at that point in time
 
                         Point bullet_point = Bullet.TransformToAncestor(WholeBoard).Transform(new Point(0, 0));//Same for bullet
                         double bullet_upper_x = bullet_point.X + Bullet.RenderSize.Width;
                         double bullet_upper_y = bullet_point.Y + Bullet.RenderSize.Height;
                      
-                        if (bullet_point.X < alien_upper_x & bullet_upper_x > alien_point.X) //If it's bullet is within the appropiate area to interset the alien
+                        if (bullet_point.X < alien_upper_x & bullet_upper_x > alien_point.X) //If its bullet is within the appropriate area to intersect the alien
                         {
-                            if (bullet_point.Y < alien_upper_y & bullet_upper_y > alien_point.Y) //And is in the appropiate y area to instersect
+                            if (bullet_point.Y < alien_upper_y & bullet_upper_y > alien_point.Y) //And is in the appropiate y area to intersect
                             {
                                 alien.Visibility = Visibility.Collapsed; //Remove alien
                                 Shot_Ships = Shot_Ships + 1; //Increase Score
-                                ResetBullet();//Reset the bullet as it has hit it's target
+                                ResetBullet();//Reset the bullet as it has hit its target
                             }
                         }
                     }
@@ -129,12 +129,12 @@ namespace Digital_Pet
  
         }
 
-        private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)//Alein movement timer
+        private void OnTimedEvent(object sender, System.Timers.ElapsedEventArgs e)//Alien movement timer
         {
             this.Dispatcher.Invoke(() => // Uses primary thread for GUI control
             {
                 Score.Content = "Score: " + Shot_Ships.ToString();// Update score
-                if (Shot_Ships == 20) { GameOver(); } //If use has killed all the aliens then end the gam,e
+                if (Shot_Ships == 20) { GameOver(); } //If user has killed all the aliens then end the game
                 if (i < 80) // If it's not at then end of the window
                 {
                     Thickness a = AlienGrid.Margin;
@@ -151,9 +151,9 @@ namespace Digital_Pet
         }
         public void ChangeRow()
         {
-            this.AlienGrid.SetValue(Grid.RowProperty, n + 1); //Change the row downawards
+            this.AlienGrid.SetValue(Grid.RowProperty, n + 1); //Change the row downwards
             alien_movement.Interval = alien_movement.Interval /2; // Increase speed of aliens to make more difficult
-            x = x * -1; //Chnage sign on front so it moves in the oppisite direction
+            x = x * -1; //Change sign on front so it moves in the opposite direction
             n = n + 1;
             if (n == 4){ GameOver(); } // IF it's on the final row then end the game
             i = 0;//Reset i
@@ -168,12 +168,12 @@ namespace Digital_Pet
             }
             if (e.Key == Key.Left)
             {
-                Plane.Margin = new Thickness(Plane.Margin.Left - 2, 0, 0, 0);//If lft arrow is pressed then move to the left by 2
+                Plane.Margin = new Thickness(Plane.Margin.Left - 2, 0, 0, 0);//If left arrow is pressed then move to the left by 2
             }
             if (e.Key == Key.Space)//When the spacebar is pressed
             {
                 Bullet.Visibility = Visibility.Visible; // make bullet visible
-                bullet_fire.Elapsed += bullet_travel;//Initiaite timers
+                bullet_fire.Elapsed += bullet_travel;//Initiate timers
                 bullet_fire.AutoReset = true;
                 bullet_fire.Enabled = true;
                 bullet_fire.Start();
