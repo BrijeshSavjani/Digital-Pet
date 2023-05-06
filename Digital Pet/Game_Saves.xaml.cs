@@ -23,7 +23,7 @@ namespace Digital_Pet
         public Game_Saves()
         {
             InitializeComponent();
-            //Open and read information about rood directory
+            //Open and read information about root directory
             DirectoryInfo root_directory_info = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
             //Filter for text files
             FileInfo[] files = root_directory_info. GetFiles("*.txt");
