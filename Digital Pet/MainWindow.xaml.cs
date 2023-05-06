@@ -39,7 +39,7 @@ namespace Digital_Pet
             int[] initial_values = new int[] { 100, 100, 100, 100,100 }; //InitialValues (No Damage as new game)
             List<int> Pantry = new List<int> (); //Pantry is empty
             Pet Tamagotchi = new Pet(initial_values,Pantry);//Create Pet 
-            Game game = new Game(Tamagotchi);//Feed into Game ti be used (done so Game remains same regardless if it's save or new game)
+            Game game = new Game(Tamagotchi);//Feed into Game to be used (done so Game remains same regardless if it's save or new game)
             game.Show();//Show Game
             this.Close();//Closes this startup window
             
