@@ -28,32 +28,32 @@ namespace Digital_Pet
 
         private void Meal_Click(object sender, RoutedEventArgs e)
         {
-            Tamagotchi.Buy(32, 32); //Using buy method that's in the Pet classs
+            Tamagotchi.Buy(32, 32); //Using buy method that's in the Pet class
         }
 
         private void Burger_Click(object sender, RoutedEventArgs e)
         {
-            Tamagotchi.Buy(20, 18); //Using buy method that's in the Pet classs
+            Tamagotchi.Buy(20, 18); //Using buy method that's in the Pet class
         }
 
         private void Pizza_Click(object sender, RoutedEventArgs e)
         {
-            Tamagotchi.Buy(20, 18);//Using buy method that's in the Pet classs
+            Tamagotchi.Buy(20, 18);//Using buy method that's in the Pet class
         }
 
         private void Drink_Click(object sender, RoutedEventArgs e)
         {
-            Tamagotchi.Buy(10, 5);//Using buy method that's in the Pet classs
+            Tamagotchi.Buy(10, 5);//Using buy method that's in the Pet class
         }
 
         private void Noodles_Click(object sender, RoutedEventArgs e)
         {
-            Tamagotchi.Buy(20, 18);//Using buy method that's in the Pet classs
+            Tamagotchi.Buy(20, 18);//Using buy method that's in the Pet class
         }
 
         private void Apple_Click(object sender, RoutedEventArgs e)
         {
-            Tamagotchi.Buy(2, 1);//Using buy method that's in the Pet classs
+            Tamagotchi.Buy(2, 1);//Using buy method that's in the Pet class
         }
     }
 }
