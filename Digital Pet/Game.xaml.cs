@@ -22,7 +22,7 @@ namespace Digital_Pet
     {
         public int i = 0;
         public static Pet Tamagotchi;
-        //^Declare  public variables
+        //Declare  public variables
         public Game(Pet tamagotchi) //Get in Pet as a parameter
         {
             Tamagotchi = tamagotchi;//Set the public pet to the pet that was fed in
@@ -42,7 +42,7 @@ namespace Digital_Pet
             Tamagotchi.Damage(); //The pet takes damage every timer interval using a method that is part of the Pet class
             StatsUpdate();//Update stats to reflect this
             i = i + 1;
-            if (i == 3)//Change gif from what was set previously evry 3rd round. (So each GIF is played enough time to be noticed) 
+            if (i == 3)//Change gif from what was set previously every 3rd round. (So each GIF is played enough times to be noticed) 
             {
                 auto_gif_change();//GIF changing function
                 i = 0;//Reset so it's every 3rd iteration 
@@ -57,7 +57,7 @@ namespace Digital_Pet
                 gif.BeginInit();
                 gif.UriSource = new Uri(path, UriKind.Relative);
                 gif.EndInit();
-                WpfAnimatedGif.ImageBehavior.SetAnimatedSource(Test, gif); //Use library to alllow for animation of GIF
+                WpfAnimatedGif.ImageBehavior.SetAnimatedSource(Test, gif); //Use library to allow for animation of GIF
                 Thread.Sleep(500);
             }
             );
@@ -70,7 +70,7 @@ namespace Digital_Pet
             string path =  "Images/GIF/DefaultMonkey.gif";//Default path(if all are over 50)
             if (minimum_value < 50)
             {
-                if (initial_min == minimum_value)//Could be boredom o happiness
+                if (initial_min == minimum_value)//Could be boredom or happiness
                 {
                     if (Tamagotchi.Get("Boredom") < Tamagotchi.Get("Happiness"))
                     {
@@ -106,20 +106,20 @@ namespace Digital_Pet
         private void Feed(object sender, RoutedEventArgs e)
         {//Feeds the pet
             bool feed = Tamagotchi.Feed();//Method built into Pet class
-            if (feed == true)//if the feed was successfull
+            if (feed == true)//if the feed was successful
             {
                 swap_gif("Images/GIF/EatingMonkey.gif");//Update GIF to show success
                 StatsUpdate();//Update graphical representation of attribute values
                 i = 0;//Set GIF Reset timer to 0
             }
             else {
-                MessageBox.Show("Nothing in the pantry. Please go shopping", "Empty Pantry", MessageBoxButton.OK);//Failuire so must be out of food
+                MessageBox.Show("Nothing in the pantry. Please go shopping", "Empty Pantry", MessageBoxButton.OK);//Failure so must be out of food
             }
         }
 
         private void Play(object sender, RoutedEventArgs e)
         {
-            Tamagotchi.Play();//Excecute Play method in Pet Class
+            Tamagotchi.Play();//Execute Play method in Pet Class
             StatsUpdate();//Update GUI to represent this
             swap_gif("Images/GIF/HappyMonkey.gif");//Swap GIF  to show user that the Activity has occured
             i = 0;
@@ -132,7 +132,7 @@ namespace Digital_Pet
         }
         public void WriteListToFile(List<int> list, StreamWriter streamWriter)
         {
-            foreach (int value in list){//For eeach value in a list
+            foreach (int value in list){//For each value in a list
                 streamWriter.Write(value.ToString() + ",");//Writes all values in a list into file
             }
             
@@ -141,8 +141,8 @@ namespace Digital_Pet
         public void SaveGame(string savename)
         {
             List<int> SaveData = new List<int> { Tamagotchi.Get("Health"), Tamagotchi.Get("Hunger"), Tamagotchi.Get("Boredom"), Tamagotchi.Get("Happiness"), Tamagotchi.Get("Money") };
-            //^Creat list with attributres in
-            List<int> Pantry = Tamagotchi.GetPantry();//Get pantry as a llist
+            //Creat list with attributes in
+            List<int> Pantry = Tamagotchi.GetPantry();//Get pantry as a list
             StreamWriter Saver = File.CreateText(AppDomain.CurrentDomain.BaseDirectory + savename);//Get somewhere to save it
             WriteListToFile(SaveData, Saver);//Write lists to file for saving
             WriteListToFile(Pantry, Saver);
